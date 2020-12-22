@@ -42,9 +42,9 @@ body {
 .topPart {
 position: static;
 width: auto;
-height: 700px;
+height: 600px;
 left: 0px;
-top: 50px;
+/* top: 50px; */
 background: #E3CCC0;
 }
 
@@ -85,7 +85,7 @@ background: #E3CCC0;
 
 /* my skills */
 .mySkills {
-/* border: 1px solid red; */
+/* border: 1px solid purple; */
 display: block;
 width: 600px;
 margin-left: 150px;
@@ -112,7 +112,7 @@ grid-auto-rows: minmax(100px, auto) */
 /* display: inline; */
 grid-template-columns: repeat(5, 1fr);
 grid-gap: 1em;
-width: 700px;
+width: 600px;
 display: grid;
 }
 
@@ -189,7 +189,7 @@ display: grid;
 .workGrid {
   display: grid;
   grid-row-gap: 100px;
-  border: 1px solid rgb(209, 37, 180);
+  /* border: 1px solid rgb(209, 37, 180); */
 }
 
 .myWork h1{
@@ -233,7 +233,7 @@ height: 1500px;
   /* display: inline; */
   grid-template-rows: repeat(3, 1fr);
   grid-gap: 1em;
-  width: 700px;
+  width: 1000px;
   display: grid;
   }
   
@@ -328,6 +328,17 @@ ul {
     padding-top: 75px;
     grid-gap: 1em;
     Position: static;
+  }
+
+  .topnav a {
+    float: right;
+    display: block;
+    color: #5a3d32;
+    text-align: center;
+    padding: 25px 15px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .85em;
   }
 
 .contentImage img{
