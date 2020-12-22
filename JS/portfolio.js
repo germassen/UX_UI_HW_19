@@ -1,5 +1,27 @@
-$("this").click(function(){
-    $("work1").fadeToggle();
-    $("work1").fadeToggle("slow");
-    $("work1").fadeToggle(3000);
+$(function(){  // $(document).ready shorthand
+    $('.mywork').fadeIn('slow');
+  });
+  
+  $(document).ready(function() {
+      
+      /* Every time the window is scrolled ... */
+      $(window).scroll( function(){
+      
+          /* Check the location of each desired element */
+          $('.work1').each( function(i){
+              
+              var bottom_of_object = $(this).position().top + $(this).outerHeight();
+              var bottom_of_window = $(window).scrollTop() + $(window).height();
+              
+              /* If the object is completely visible in the window, fade it it */
+              if( bottom_of_window > bottom_of_object ){
+                  
+                  $(this).animate({'opacity':'1'},1500);
+                      
+              }
+              
+          }); 
+      
+      });
+      
   });
